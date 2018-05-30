@@ -28,12 +28,14 @@ so there doesn't appear to be much advantage to putting the app in the stores.
 ## Installing
 
 1. Install the development enviroment
-    - iOS: xcode
+    - iOS: xcode + [ios-sim](https://github.com/ios-control/ios-sim#node-js)
     - android: android studio
 
-2. Launch the simulator, either from the development environment UI, or 
-    - iOS: `$ ios-sim start`
-    - android: `$ $ANDROID_HOME/platform-tools/emulator/emulator -list-avds | head -n 1 | xargs $ANDROID_HOME/platform-tools/emulator/emulator -avd`
+2. Launch the simulator, either:
+    - from the development environment UI (use xcode or android studio help), or 
+    - from the command line
+        - iOS: `$ ios-sim start`
+        - android: `$ $ANDROID_HOME/platform-tools/emulator/emulator -list-avds | head -n 1 | xargs $ANDROID_HOME/platform-tools/emulator/emulator -avd`
 
 3. Drag and drop the binary into the emulator
     - iOS: em-devapp.app
