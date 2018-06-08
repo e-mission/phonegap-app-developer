@@ -51,7 +51,7 @@ so there doesn't appear to be much advantage to putting the app in the stores.
 
 ## Installing on a real phone
 
-If you want to test on a real phone instead of the simulator:
+If you want to test on a real phone instead of the simulator, use these options instead of steps 2 and 3 above. The other steps are the same.
 - android: install the apk to your phone (search "install apk on phone"). Obvious choices include either downloading the apk directly from the releases page, or by installing via `adb`.
 - iOS: installing apps onto a real device requires an Apple Developer license. Since the app has to be signed by keys associated with your developer license before installation, we can't publish `.ipa` files as part of the release. So you have to build and install the devapp from scratch using the instructions below.
 
