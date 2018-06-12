@@ -53,7 +53,16 @@ so there doesn't appear to be much advantage to putting the app in the stores.
 
 If you want to test on a real phone instead of the simulator, use these options instead of steps 2 and 3 above. The other steps are the same.
 - android: install the apk to your phone (search "install apk on phone"). Obvious choices include either downloading the apk directly from the releases page, or by installing via `adb`.
-- iOS: installing apps onto a real device requires an Apple Developer license. Since the app has to be signed by keys associated with your developer license before installation, we can't publish `.ipa` files as part of the release. So you have to build and install the devapp from scratch using the instructions below.
+- iOS: installing apps onto a real device requires an Apple Developer license. Since the app has to be signed by keys associated with your developer license before installation, we can't publish `.ipa` files as part of the release. So you have to build and install the devapp from scratch.
+
+    ```shellsession
+    $ git clone https://github.com/e-mission/e-mission-devapp.git
+    $ cd e-mission-devapp/
+    $ npm install
+    $ npm run phonegap -- run ios
+    ```
+
+**Note:** Sometimes, the last command (`$ npm run phonegap -- run ios`) fails because of errors while cloning plugins (`Failed to restore plugin "..." from config.xml.`). A workaround is at https://github.com/e-mission/e-mission-docs/blob/master/docs/overview/high_level_faq.md#i-get-an-error-while-adding-plugins
 
 ## Everything below this line is from the standard phonegap app README
 ---
