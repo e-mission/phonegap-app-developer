@@ -74,7 +74,6 @@
         <icon density="mdpi" src="resources/icon/android/icon-48.png" />
         <icon density="hdpi" src="resources/icon/android/icon-72.png" />
         <icon density="xhdpi" src="resources/icon/android/icon-96.png" />
-        <resource-file src="google-services.json" target="google-services.json" />
     </platform>
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <engine name="ios" spec="^4.5.4" />
