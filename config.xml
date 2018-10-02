@@ -76,8 +76,6 @@
         <icon density="xhdpi" src="resources/icon/android/icon-96.png" />
     </platform>
     <preference name="SplashShowOnlyFirstTime" value="false" />
-    <engine name="ios" spec="^4.5.4" />
-    <engine name="android" spec="~6.4.0" />
     <plugin name="cordova-plugin-device" spec="~2.0.1" />
     <plugin name="cordova-plugin-file" spec="~6.0.1" />
     <plugin name="cordova-plugin-inappbrowser" spec="https://github.com/shankari/cordova-plugin-inappbrowser.git" />
@@ -94,7 +92,7 @@
         <variable name="URL_SCHEME" value="emission" />
     </plugin>
     <plugin name="cordova-plugin-email-composer" spec="~0.8.12" />
-    <plugin name="cordova-plugin-ionic" spec="=3.0.0">
+    <plugin name="cordova-plugin-ionic" spec="https://github.com/e-mission/cordova-plugin-ionic.git#3.2.0">
         <variable name="APP_ID" value="e0d8cdec" />
         <variable name="CHANNEL_NAME" value="Production" />
         <variable name="UPDATE_METHOD" value="none" />
@@ -110,4 +108,6 @@
     <plugin name="edu.berkeley.eecs.emission.cordova.transitionnotify" spec="https://github.com/e-mission/e-mission-transition-notify.git" />
     <plugin name="edu.berkeley.eecs.emission.cordova.unifiedlogger" spec="https://github.com/e-mission/cordova-unified-logger.git" />
     <plugin name="edu.berkeley.eecs.emission.cordova.usercache" spec="https://github.com/e-mission/cordova-usercache.git" />
+    <engine name="ios" spec="^4.5.4" />
+    <engine name="android" spec="~6.4.0" />
 </widget>
