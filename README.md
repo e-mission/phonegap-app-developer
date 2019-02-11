@@ -16,6 +16,9 @@ allows you to:
 
 For more information, see the CLI instructions in the [Developer App Reference Guide][3] on the PhoneGap Docs. e-mission-dev-app has not been tested with the PhoneGap desktop app. If you get it to work, please submit a pull request with instructions :)
 
+## Issues
+Since this repository is part of a larger project, all issues are tracked [in the central docs repository](https://github.com/e-mission/e-mission-docs/issues). If you have a question, [as suggested by the open source guide](https://opensource.guide/how-to-contribute/#communicating-effectively), please file an issue instead of sending an email. Since issues are public, other contributors can try to answer the question and benefit from the answer.
+
 ## Download
 Unlike the PhoneGap Developer App, the e-mission devapp is NOT in the stores.
 You will need to manually download the latest release.
