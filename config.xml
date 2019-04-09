@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="36" id="edu.berkeley.eecs.emission.devapp" ios-CFBundleVersion="36" version="2.7.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget android-versionCode="35" id="edu.berkeley.eecs.emission.devapp" ios-CFBundleVersion="35" version="2.6.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>em-devapp</name>
     <description>
         The emission Developer app is a clone of the PhoneGap Developer app with the emission plugins. It is a testing utility for web developers and designers using the emission platform. After installing this app on your device or simulator you will be able to use phonegap serve to autorefresh without re-deploying the app everytime.
@@ -102,8 +102,6 @@
         <variable name="MAX_STORE" value="2" />
     </plugin>
     <plugin name="de.appplant.cordova.plugin.local-notification-ios9-fix" spec="https://github.com/shankari/cordova-plugin-local-notifications.git" />
-    <engine name="ios" spec="^4.5.4" />
-    <engine name="android" spec="~6.4.0" />
     <plugin name="edu.berkeley.eecs.emission.cordova.auth" spec="https://github.com/e-mission/cordova-jwt-auth.git#v1.5.0" />
     <plugin name="edu.berkeley.eecs.emission.cordova.comm" spec="https://github.com/e-mission/cordova-server-communication.git#v1.2.0" />
     <plugin name="edu.berkeley.eecs.emission.cordova.datacollection" spec="https://github.com/e-mission/e-mission-data-collection.git#v1.3.3">
@@ -114,4 +112,6 @@
     <plugin name="edu.berkeley.eecs.emission.cordova.transitionnotify" spec="https://github.com/e-mission/e-mission-transition-notify.git#v1.2.0" />
     <plugin name="edu.berkeley.eecs.emission.cordova.unifiedlogger" spec="https://github.com/e-mission/cordova-unified-logger.git#v1.3.1" />
     <plugin name="edu.berkeley.eecs.emission.cordova.usercache" spec="https://github.com/e-mission/cordova-usercache.git#v1.1.0" />
+    <engine name="ios" spec="^4.5.4" />
+    <engine name="android" spec="^6.4.0" />
 </widget>
