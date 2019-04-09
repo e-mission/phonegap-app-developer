@@ -79,7 +79,7 @@
       "ionic-plugin-keyboard": {},
       "cordova-plugin-app-version": {},
       "cordova-plugin-customurlscheme": {
-        "LOCATION_VERSION": "11.0.1"
+        "URL_SCHEME": "emission"
       },
       "cordova-plugin-email-composer": {},
       "cordova-plugin-ionic": {
@@ -94,7 +94,9 @@
       "edu.berkeley.eecs.emission.cordova.unifiedlogger": {},
       "edu.berkeley.eecs.emission.cordova.comm": {},
       "edu.berkeley.eecs.emission.cordova.usercache": {},
-      "edu.berkeley.eecs.emission.cordova.datacollection": {},
+      "edu.berkeley.eecs.emission.cordova.datacollection": {
+        "LOCATION_VERSION": "11.0.1"
+      },
       "edu.berkeley.eecs.emission.cordova.serversync": {},
       "edu.berkeley.eecs.emission.cordova.transitionnotify": {},
       "edu.berkeley.eecs.emission.cordova.auth": {}
