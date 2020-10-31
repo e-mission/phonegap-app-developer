@@ -11,6 +11,7 @@ var config = {};
 ---------------------------------------------------*/
 
 $().ready(function() {
+    console.log("Adding javascript events");
     // Add events
     $('#login-form').submit(buildSubmit);
     $('a[target="_system"]').on('click', function(e) {
@@ -49,16 +50,18 @@ $().ready(function() {
 
     // Work around CSS browser issues.
     supportBrowserQuirks();
+    console.log("Finished adding javascript events");
 });
 
 $(document).on('deviceready', function() {
     // Add slight delay to allow DOM rendering to finish.
     // Avoids flicker on slower devices.
+    console.log("Received deviceready");
     setTimeout(function() {
+        console.log("Running deviceready code");
         // allow the screen to dim when returning from the served app
         window.plugins.insomnia.allowSleepAgain();
 
-        navigator.splashscreen.hide();
         $('.footer').removeClass('faded');
 
         // %HOCKEYAPP
@@ -66,6 +69,7 @@ $(document).on('deviceready', function() {
         // Load configuration
         window.phonegap.app.config.load(function(data) {
             // store the config data
+            console.log("Loaded data "+JSON.stringify(data));
             config = data;
 
             // load analytics permission value
@@ -90,6 +94,7 @@ $(document).on('deviceready', function() {
                 $('#address').val(config.address);
             }
 
+            console.log("About to open bot "+JSON.stringify(data));
             setTimeout( function() {
                 $('.alert').removeClass('alert');
                 $('.visor').removeClass('pulse');

@@ -144,16 +144,24 @@
         var sync;
         var theHeaders = options.headers;
         if(options.update === true) {
+            console.log("updating the UI");
             uri = encodeURI(options.address + '/__api__/update');
             sync = ContentSync.sync({ src: uri, id: 'phonegapdevapp', type: 'merge', copyCordovaAssets: false, headers: theHeaders });
             sync.on('complete', function(data) {
+                console.log("completed data = "+data);
                 window.location.reload();
             });
         } else {
+            console.log("downloading completely");
             uri = encodeURI(options.address + '/__api__/appzip');
             sync = ContentSync.sync({ src: uri, id: 'phonegapdevapp', type: 'replace', copyCordovaAssets: true, headers: theHeaders });
             sync.on('complete', function(data) {
-                window.location.href = data.localPath + '/www/index.html';
+                console.log("completed data = "+JSON.stringify(data));
+                var preConverted = data.localPath + '/www/index.html';
+                console.log("pre-converted file path = "+preConverted);
+                var postConverted = window.Ionic.WebView.convertFileSrc(preConverted);
+                console.log("post-converted file path = "+postConverted);
+                window.location.href = postConverted;
             });
         }
 
