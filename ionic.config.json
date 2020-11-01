@@ -1,0 +1,15 @@
+{
+  "name": "e-mission-phone",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic1",
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "12.41.296.5"
+    }
+  ],
+  "id": "e0d8cdec"
+}
