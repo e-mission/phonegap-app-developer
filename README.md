@@ -2,6 +2,11 @@
 
 > Work on the emission UI without setting up the native build environment
 
+
+[![osx-build-ios](https://github.com/e-mission/e-mission-devapp/workflows/osx-build-ios/badge.svg)](https://github.com/e-mission/e-mission-devapp/actions?query=workflow%3Aosx-ubuntu-build-android)
+[![osx-ubuntu-build-android](https://github.com/e-mission/e-mission-devapp/workflows/osx-ubuntu-build-android/badge.svg)](https://github.com/e-mission/e-mission-devapp/actions?query=workflow%3Aosx-build-ios)
+
+
 ## Overview
 
 The e-mission developer app (adapted from the [PhoneGap Developer
