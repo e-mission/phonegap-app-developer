@@ -37,19 +37,21 @@ so there doesn't appear to be much advantage to putting the app in the stores.
 
 1. Install the development enviroment
     - iOS: xcode + [ios-sim](https://github.com/ios-control/ios-sim#node-js)
-    - android: android studio
+    - android: [android studio](https://developer.android.com/studio)
+        - install Android Emulator from **Appearance & Behavior > System Settings > Android SDK > SDK Tools**
+        - follow instructions for creating an [Android Virtual Device](https://developer.android.com/studio/run/emulator#avd) for testing
 
 2. Launch the simulator, either:
     - from the development environment UI (use xcode or android studio help), or 
     - from the command line
         - iOS: `$ ios-sim start`
-        - android: `$ $ANDROID_HOME/platform-tools/emulator/emulator -list-avds | head -n 1 | xargs $ANDROID_HOME/platform-tools/emulator/emulator -avd`
+        - android: `$ $ANDROID_HOME/emulator/emulator -list-avds | head -n 1 | xargs $ANDROID_HOME/emulator/emulator -avd`
 
-3. Drag and drop the binary into the emulator
+3. Drag and drop the binary into the emulator (see [releases](https://github.com/e-mission/e-mission-devapp/releases))
     - iOS: em-devapp.app
     - android: em-devapp.apk
     
-4. Launch the installed app and wait for it to go through the "Loading" and "Hi!" screens until it comes to the "Server address" screen
+4. When it appears, launch the installed em-devapp and wait for it to go through the "Loading" and "Hi!" screens until it comes to the "Server address" screen
 
 4. Start the server in a clone derived from the [e-mission-phone](https://github.com/e-mission/e-mission-phone) repository
 
