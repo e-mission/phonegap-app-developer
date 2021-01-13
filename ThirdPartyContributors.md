@@ -10,6 +10,9 @@ Scotiabank, Splunk and VMware. This work was also supported in part by the
 CONIX Research Center, one of six centers in JUMP, a Semiconductor Research
 Corporation (SRC) program sponsored by DARPA.
 
+Copyright (c) 2013 Adobe Systems Incorporated
+This code is forked from the orginal phonesync repo with some modifications to continue working for [em-devapp](https://github.com/e-mission/e-mission-devapp)
+
 Contributions owned by their respective contributors.
 
 This project would not be possible without contributors (code, documentation,
